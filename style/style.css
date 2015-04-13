@@ -182,6 +182,7 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .nav-main {
     overflow: hidden;
+    margin: 25px 0;
 }
     .nav-main li {
         float: left;
@@ -215,10 +216,33 @@ a:hover                        { text-decoration:none; }
                 -moz-border-radius: 5px;
                 border-radius: 5px;
             }
+
+.main {
+    margin-bottom: 30px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.side-bar {
+    float: left;
+    width: 167px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    border: 1px solid #98BAB5;
+    background: #D6E8E1;
+}
+    .side-bar li {
+        padding-top: 25px;
+        border-top: 1px solid #98BAB5;
+    }
+    .side-bar li:first-child {
+        padding-top: 0;
+        border: none;
+    }
+        .side-bar h2 {
+            margin-bottom: 25px;
+            font: 24px 'pfbeau';
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/

@@ -6,9 +6,10 @@
 
 /** Carousel **/
 
-.jcarousel {
+.slider-home {
     position: relative;
     overflow: hidden;
+    margin-bottom: 35px;
 }
 
 .jcarousel ul {
