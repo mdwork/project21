@@ -465,9 +465,25 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.side-bar {
+#toggle-btn-side-bar {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    background: url("../images/content/triagle_right.png") repeat-y #D6E8E1;
+    cursor: pointer;
+}
+.active #toggle-btn-side-bar {
+    background: url("../images/content/triagle_left.png") repeat-y;
+}
+.wrap-side-bar {
+    position: relative;
     float: left;
     width: 167px;
+    min-width: 32px;
     padding: 15px 25px;
     margin: 10px 3% 30px 0;
     border: 1px solid #98BAB5;
@@ -579,5 +595,17 @@ a:hover                        { text-decoration:none; }
                 color: #62e1a4;
             }
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------OTHER----------------------------------------*/
+/*--------------------------------RESPONSIVE----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 759px){
+    #toggle-btn-side-bar {
+        display: block;
+    }
+    .wrap-side-bar {
+        position: absolute;
+        margin-left: -188px;
+    }
+    .main {
+        margin-left: 35px;
+    }
+}
