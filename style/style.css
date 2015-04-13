@@ -358,6 +358,110 @@ a:hover                        { text-decoration:none; }
                     width: 100%;
                     height: 39px;
                 }
+
+        .name-section {
+            margin-bottom: 17px;
+            font: 30px 'pfbeau';
+        }
+        .list-working {
+            text-align: center;
+        }
+            .list-working li {
+                display: inline-table;
+                width: 14%;
+                margin-bottom: 30px;
+            }
+                .list-working .wrap {
+                    max-width: 130px;
+                    width: 100%;
+                }
+                    .list-working .wrap-foto {
+                        display: block;
+                        padding: 0 15%;
+                        margin-bottom: 20px;
+                        text-align: center;
+                    }
+                        .list-working img {
+                            width: 100%;
+                            max-width: 69px;
+                        }
+                    .list-working .description {
+                        display: block;
+                        text-align: center;
+                        font-size: 18px;
+                    }
+        .tbl-reasons {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+            .tbl-reasons th,
+            .tbl-reasons td {
+                width: 50%;
+                padding: 12px 0 12px 35px;
+                text-align: left;
+            }
+            .tbl-reasons th {
+                padding: 10px 0 10px 35px;
+            }
+            .tbl-reasons th {
+                font: 24px 'pfbeau';
+                color: #fff;
+                background: #004C39;
+                border: 2px solid #fff;
+            }
+            .tbl-reasons td {
+                font-size: 20px;
+                border: 2px solid #fff;
+            }
+            .tbl-reasons tr:nth-child(2n) {
+                background: #62C8AE;
+            }
+            .tbl-reasons tr:nth-child(2n + 1) {
+                background: #D7F7EF;
+            }
+        .list-review {
+            overflow: hidden;
+        }
+            .list-review li {
+                position: relative;
+                float: left;
+                width: 47%;
+                margin-left: 6%;
+            }
+                .list-review li:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 19px;
+                    height: 15px;
+                    background: url("../images/content/quetes1.png") no-repeat;
+                }
+                .list-review li:after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    display: block;
+                    width: 19px;
+                    height: 15px;
+                    background: url("../images/content/quetes2.png") no-repeat;
+                }
+            .list-review li:first-child {
+                margin-left: 0;
+            }
+                .list-review .name {
+                    display: block;
+                    margin-bottom: 15px;
+                    padding-left: 25px;
+                    font-size: 22px;
+                }
+                .list-review .text {
+                    display: block;
+                    padding-left: 25px;
+                    font-size: 18px;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
