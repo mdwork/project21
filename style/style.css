@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:12px Arial, sans-serif; background:#fff; color:#000; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -17,7 +17,7 @@ input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px Arial, sans-serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -40,22 +40,42 @@ a:hover                        { text-decoration:none; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
 .clearfix                      { display: inline-block; width: 100% }
 
-.content {
+.bor-box {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 100%;
-	max-width: 980px;
-	margin: 0 auto;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+@font-face {
+    font-family: 'pfbeau';
+    src: url('../fonts/PFBeauSansPro-Regular.eot');
+    src: url('../fonts/PFBeauSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PFBeauSansPro-Regular.woff') format('woff'),
+    url('../fonts/pfbeausanspro-reg.ttf') format('truetype'),
+    url('../fonts/PFBeauSansPro-Regular.svg#pf_agora_sans_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrapper {
+    overflow: hidden;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+.custom-footer {
+    min-height: 100%;
+}
+    .custom-footer:after {
+        content: '';
+        display: block;
+        height: 110px;
+        width: 100%;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -71,7 +91,65 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.wrap-footer {
+    background: #004937;
+}
+    .footer {
+        position: relative;
+        padding: 17px 0 20px;
+        margin-top: -110px;
+        color: #fff;
+    }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a.logo-footer,
+        .logo-footer {
+            float: left;
+        }
+            .logo-footer img {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .logo-footer span {
+                text-transform: uppercase;
+                font-size: 9px;
+                letter-spacing: 0.6px;
+            }
 
+        .nav-footer  {
+            float: right;
+            overflow: hidden;
+            margin-top: 17px;
+        }
+            .nav-footer li {
+                float: left;
+                margin-left: 3px;
+            }
+                .nav-footer li:before {
+                    content: '|';
+                    margin-right: 3px;
+                }
+                .nav-footer li:first-child:before {
+                    display: none;
+                }
+                .nav-footer li a {
+                    font-size: 11px;
+                }
+                .nav-footer li a:hover {
+                    text-decoration: underline;
+                }
+
+        .contact-box {
+            position: absolute;
+            bottom: 17px;
+            right: 0;
+            font-size: 14px;
+        }
+            .contact-box span {
+                color: #62e1a4;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
