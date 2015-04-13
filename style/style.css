@@ -45,6 +45,31 @@ a:hover                        { text-decoration:none; }
     -webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.btn {
+    background: url("../images/btn_bg.png") repeat-x;
+    background-size: 100% 100%;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #B5171D;
+}
+.search {
+    display: block;
+    width: 156px;
+    padding: 7px 0 6px 10px;
+    border: none;
+    font-size: 14px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -79,7 +104,79 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrap-header,
+.wrap-footer {
+    background: #004937;
+}
+    .header {
+        padding: 20px 0 30px;
+        color: #fff;
+        text-align: center;
+    }
+        .header a,
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .main-logo {
+            float: left;
+        }
+            .main-logo img {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .main-logo span {
+                text-transform: uppercase;
+                font-size: 10px;
+                letter-spacing: 2px;
+            }
+        .header .right-colum {
+            float: right;
+        }
+            .header .right-colum .btn-header {
+                display: block;
+                width: 156px;
+                padding: 6px 0 5px;
+                margin-bottom: 15px;
+            }
+        .contact-header {
+            overflow: hidden;
+            display: inline-block;
+            margin-top: 25px;
+            text-align: center;
+            font: 14px 'pfbeau';
+        }
+            .contact-header .top {
+                overflow: hidden;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+                .contact-header .top li {
+                    display: inline-block;
+                    margin-left: 25px;
+                    font-size: 26px;
+                }
+                .contact-header .top li:first-child {
+                    margin-left: 0;
+                }
+                .contact-header .top .tell span,
+                .contact-header .top .time {
+                    color: #62e1a4;
+                }
+                .contact-header .top .tell,
+                .contact-header .top .time {
+                    padding-left: 55px;
+                }
+                .contact-header .top .tell {
+                    background: url("../images/header/icon_tell.png") no-repeat;
+                }
+                .contact-header .top .time {
+                    background: url("../images/header/icon_time.png") no-repeat;
+                }
+            .contact-header .bottom {
+                display: block;
+                text-align: left;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -91,20 +188,12 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.wrap-footer {
-    background: #004937;
-}
     .footer {
         position: relative;
         padding: 17px 0 20px;
         margin-top: -110px;
         color: #fff;
     }
-        .footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-        a.logo-footer,
         .logo-footer {
             float: left;
         }
