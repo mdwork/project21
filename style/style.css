@@ -218,16 +218,62 @@ a:hover                        { text-decoration:none; }
             }
 
 .main {
+    overflow: hidden;
     margin-bottom: 30px;
 }
     .header-page {
         overflow: hidden;
         display: block;
+        margin-bottom: 25px;
     }
         .header-page h1,
         .header-page span {
             display: inline-block;
             font: 36px 'pfbeau';
+        }
+        .wrap-list-good {
+            overflow: hidden;
+        }
+            .list-good li {
+                float: left;
+                width: 32%;
+                margin-left: 2%;
+                text-align: center;
+            }
+            .list-good li:first-child {
+                margin-left: 0;
+            }
+                .list-good .wrap {
+                    padding: 15px 6.5%;
+                    border: 1px solid #000;
+                    font-size: 18px;
+                }
+                    .list-good img {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    .list-good span {
+                        display: block;
+                    }
+                    .list-good .name {
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                    }
+                    .list-good .size {
+                        margin-bottom: 10px;
+                    }
+                    .list-good .btn {
+                        width: 100%;
+                        padding: 9px 0;
+                    }
+        a.see-more {
+            float: right;
+            margin-top: 30px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        a.see-more:hover {
+            color: #e4282f;
         }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
@@ -236,8 +282,7 @@ a:hover                        { text-decoration:none; }
     float: left;
     width: 167px;
     padding: 15px 25px;
-    margin-bottom: 30px;
-    margin-right: 3%;
+    margin: 10px 3% 30px 0;
     border: 1px solid #98BAB5;
     background: #D6E8E1;
 }
