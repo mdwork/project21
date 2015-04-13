@@ -220,6 +220,15 @@ a:hover                        { text-decoration:none; }
 .main {
     margin-bottom: 30px;
 }
+    .header-page {
+        overflow: hidden;
+        display: block;
+    }
+        .header-page h1,
+        .header-page span {
+            display: inline-block;
+            font: 36px 'pfbeau';
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -228,14 +237,15 @@ a:hover                        { text-decoration:none; }
     width: 167px;
     padding: 15px 25px;
     margin-bottom: 30px;
+    margin-right: 3%;
     border: 1px solid #98BAB5;
     background: #D6E8E1;
 }
-    .side-bar li {
+    .side-bar > li {
         padding-top: 25px;
         border-top: 1px solid #98BAB5;
     }
-    .side-bar li:first-child {
+    .side-bar > li:first-child {
         padding-top: 0;
         border: none;
     }
@@ -243,6 +253,45 @@ a:hover                        { text-decoration:none; }
             margin-bottom: 25px;
             font: 24px 'pfbeau';
         }
+        .list-side-bar {
+            margin-bottom: 25px;
+        }
+            .list-side-bar li {
+                margin-bottom: 10px;
+            }
+                .list-side-bar > li a {
+                    padding-bottom: 1px;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+                .list-side-bar > li a:hover {
+                    padding-bottom: 0;
+                    border-bottom: 1px solid #000;
+                }
+                .list-side-bar .active > a {
+                    display: block;
+                    width: 167px;
+                    margin: 0 0 5px -16px;
+                    padding: 5px 16px;
+                    background: #62C8AE;
+                    color: #fff;
+
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                }
+                .list-side-bar .active > a:hover {
+                    border: none;
+                    padding-bottom: 5px;
+                }
+                .sub-menu-side-bar {
+                    padding-left: 13px;
+                }
+                    .sub-menu-side-bar li:before {
+                        content: '\2013';
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -290,7 +339,7 @@ a:hover                        { text-decoration:none; }
 
         .contact-box {
             position: absolute;
-            bottom: 17px;
+            bottom: 20px;
             right: 0;
             font-size: 14px;
         }
