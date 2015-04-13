@@ -231,6 +231,7 @@ a:hover                        { text-decoration:none; }
         margin-bottom: 25px;
     }
         .header-page h1,
+        .header-page h2,
         .header-page span {
             display: inline-block;
             font: 36px 'pfbeau';
@@ -283,7 +284,8 @@ a:hover                        { text-decoration:none; }
 
         .wrap-advantages {
             overflow: hidden;
-            padding: 20px 3.4%;
+            padding: 18px 3.4%;
+            margin-bottom: 35px;
             border: 1px solid #035641;
             border-top: none;
             background: url("../images/content/line_blue.png") repeat-y;
@@ -311,7 +313,7 @@ a:hover                        { text-decoration:none; }
                         display: table;
                         width: 100%;
                         min-height: 42px;
-                        margin-bottom: 12px;
+                        margin-bottom: 15px;
                     }
                         .list-our-advantages .number {
                             display: table-cell;
@@ -328,11 +330,34 @@ a:hover                        { text-decoration:none; }
 
         .wrap-form {
             float: right;
-            width: 300px;
-            margin-left: 4.5%;
+            width: 250px;
+            margin: 0 0 35px 4.5%;
+            padding: 20px 25px;
             border: 1px solid #98BAB5;
             background: #D6E8E1;
         }
+            .wrap-form .name-form {
+                display: block;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+                .wrap-form .text,
+                .wrap-form .tell {
+                    width: 100%;
+                    height: 32px;
+                    padding-left: 10px;
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                    border: 1px solid #98BAB5;
+
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                }
+                .wrap-form .btn {
+                    width: 100%;
+                    height: 39px;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
