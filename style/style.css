@@ -70,6 +70,10 @@ a:hover                        { text-decoration:none; }
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+.border {
+    padding-top: 35px;
+    border-top: 1px solid #A1A1A1;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -233,6 +237,7 @@ a:hover                        { text-decoration:none; }
         }
         .wrap-list-good {
             overflow: hidden;
+            padding-bottom: 35px;
         }
             .list-good li {
                 float: left;
@@ -274,6 +279,59 @@ a:hover                        { text-decoration:none; }
         }
         a.see-more:hover {
             color: #e4282f;
+        }
+
+        .wrap-advantages {
+            overflow: hidden;
+            padding: 20px 3.4%;
+            border: 1px solid #035641;
+            border-top: none;
+            background: url("../images/content/line_blue.png") repeat-y;
+            background-size: 100% 100%;
+            color: #fff;
+            font-size: 15px;
+        }
+            .wrap-advantages .name-block {
+                display: block;
+                margin-bottom: 30px;
+                font: 32px 'pfbeau';
+            }
+            .list-our-advantages {
+                overflow: hidden;
+            }
+                .list-our-advantages li {
+                    float: left;
+                    width: 49%;
+                    margin-left: 2%;
+                }
+                .list-our-advantages li:first-child {
+                    margin-left: 0;
+                }
+                    .list-our-advantages .wrap-text {
+                        display: table;
+                        width: 100%;
+                        min-height: 42px;
+                        margin-bottom: 12px;
+                    }
+                        .list-our-advantages .number {
+                            display: table-cell;
+                            width: 41px;
+                            text-align: center;
+                            font: bold 32px 'pfbeau';
+                            background: url("../images/content/bg_number.png") no-repeat;
+                        }
+                        .list-our-advantages .text {
+                            display: table-cell;
+                            padding-left: 4px;
+                            vertical-align: top;
+                        }
+
+        .wrap-form {
+            float: right;
+            width: 300px;
+            margin-left: 4.5%;
+            border: 1px solid #98BAB5;
+            background: #D6E8E1;
         }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
