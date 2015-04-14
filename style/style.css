@@ -221,6 +221,41 @@ a:hover                        { text-decoration:none; }
                 border-radius: 5px;
             }
 
+.slider-home li {
+    position: relative;
+}
+    .slider-home .description-slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 12%;
+        font-family: 'pfbeau';
+        color: #fff;
+    }
+        .description-slide .wrap {
+            display: table;
+            height: 100%;
+        }
+            .description-slide .wrap > div {
+                display: table-cell;
+                vertical-align: middle;
+            }
+                .description-slide .header {
+                    font-size: 60px;
+                    font-weight: bold;
+                    text-align: left;
+                    padding-bottom: 10px;
+                }
+                .description-slide .middle {
+                    display: block;
+                    margin-bottom: 25px;
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+                .description-slide .bottom {
+                    font-size: 24px;
+                }
+
 .main {
     overflow: hidden;
     margin-bottom: 30px;
@@ -504,42 +539,51 @@ a:hover                        { text-decoration:none; }
         .list-side-bar {
             margin-bottom: 25px;
         }
-            .list-side-bar li {
+            .list-side-bar > li > a {
+                display: block;
+                width: 167px;
+                margin: 0 0 5px -16px;
+                padding: 5px 16px;
+                font-size: 14px;
+                text-decoration: none;
+            }
+            .list-side-bar > li > a:hover {
+                display: block;
+                padding: 5px 16px;
+                background: #62C8AE;
+                color: #fff;
+
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+            .list-side-bar .active > a {
                 margin-bottom: 10px;
             }
-                .list-side-bar > li a {
+            .list-side-bar .active > a:hover {
+                border: none;
+                padding-bottom: 5px;
+            }
+            .sub-menu-side-bar {
+                padding-left: 13px;
+            }
+                .sub-menu-side-bar li {
+                    margin-bottom: 10px;
+                }
+                .sub-menu-side-bar li:before {
+                    content: '\2013';
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+                .sub-menu-side-bar > li a {
                     padding-bottom: 1px;
                     font-size: 14px;
                     text-decoration: none;
                 }
-                .list-side-bar > li a:hover {
+                .sub-menu-side-bar > li a:hover {
                     padding-bottom: 0;
                     border-bottom: 1px solid #000;
                 }
-                .list-side-bar .active > a {
-                    display: block;
-                    width: 167px;
-                    margin: 0 0 5px -16px;
-                    padding: 5px 16px;
-                    background: #62C8AE;
-                    color: #fff;
-
-                    -webkit-border-radius: 5px;
-                    -moz-border-radius: 5px;
-                    border-radius: 5px;
-                }
-                .list-side-bar .active > a:hover {
-                    border: none;
-                    padding-bottom: 5px;
-                }
-                .sub-menu-side-bar {
-                    padding-left: 13px;
-                }
-                    .sub-menu-side-bar li:before {
-                        content: '\2013';
-                        display: inline-block;
-                        margin-right: 5px;
-                    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
