@@ -221,6 +221,34 @@ a:hover                        { text-decoration:none; }
                 border-radius: 5px;
             }
 
+.btn-menu {
+    overflow: hidden;
+    display: none;
+}
+.tbl-toggle {
+    overflow: hidden;
+}
+
+.btn-toggle {
+    display: inline-block;
+    color: #004937;
+    line-height: 5px;
+    font-size: 19px;
+    padding: 2px 4px 5px;
+    margin: 10px 15px;
+    border: 1px solid #004937;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.btn-toggle:after,
+.btn-toggle:before {
+    display: block;
+    content: '\2014';
+    color: #004937;
+}
+
 .slider-home li {
     position: relative;
 }
@@ -651,6 +679,24 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------RESPONSIVE----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (max-width: 980px){
+    .btn-menu {
+        display: block;
+    }
+    .tbl-toggle {
+        display: none;
+    }
+    .nav-main li,
+    .nav-main li:first-child {
+        display: block;
+        float: none;
+        margin-left: 13px;
+    }
+    .nav-main li:before {
+        content: '';
+        display: none;
+    }
+}
 @media screen and (max-width: 759px){
     #toggle-btn-side-bar {
         display: block;
