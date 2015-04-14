@@ -535,6 +535,10 @@ a:hover                        { text-decoration:none; }
         .side-bar h2 {
             margin-bottom: 25px;
             font: 24px 'pfbeau';
+            cursor: pointer;
+        }
+        .side-bar .no-toggle h2 {
+            cursor: default;
         }
         .list-side-bar {
             margin-bottom: 25px;
@@ -565,10 +569,16 @@ a:hover                        { text-decoration:none; }
                 padding-bottom: 5px;
             }
             .sub-menu-side-bar {
+                display: none;
+                margin-bottom: 15px;
                 padding-left: 13px;
             }
                 .sub-menu-side-bar li {
                     margin-bottom: 10px;
+                }
+                .sub-menu-side-bar li:last-child,
+                .list-side-bar li:last-child .sub-menu-side-bar {
+                    margin-bottom: 0;
                 }
                 .sub-menu-side-bar li:before {
                     content: '\2013';
