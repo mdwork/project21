@@ -212,13 +212,17 @@ a:hover                        { text-decoration:none; }
                 text-decoration: none;
                 font-size: 13px;
             }
-            .nav-main a:hover {
+            .nav-main a:hover,
+            .nav-main .active a {
                 color: #fff;
                 background: url("../images/btn_bg.png");
 
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
                 border-radius: 5px;
+            }
+            .nav-main .active a {
+                pointer-events: none;
             }
 
 .btn-menu {
@@ -301,6 +305,10 @@ a:hover                        { text-decoration:none; }
         overflow: hidden;
         display: block;
         margin-bottom: 25px;
+    }
+    .sub-header {
+        margin-bottom: 30px;
+        font: 24px 'pfbeau';
     }
         .header-page h1,
         .header-page h2,
