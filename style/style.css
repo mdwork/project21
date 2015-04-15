@@ -353,7 +353,8 @@ a:hover                        { text-decoration:none; }
                             width: 100%;
                             padding: 9px 0;
                         }
-        a.see-more {
+        a.see-more,
+        .desc-list {
             float: right;
             margin-top: 15px;
             font-size: 18px;
@@ -546,6 +547,29 @@ a:hover                        { text-decoration:none; }
                     padding-left: 25px;
                     font-size: 18px;
                 }
+    .pagination {
+        overflow: hidden;
+        text-align: center;
+    }
+        .pagination li {
+            display: inline-block;
+            margin-left: 7px;
+        }
+        .pagination li:first-child {
+            margin-left: 0;
+        }
+            .pagination a {
+                display: block;
+                padding: 10px 13px;
+                text-decoration: none;
+                background: #CECCCC;
+                font-size: 18px;
+            }
+            .pagination .active a,
+            .pagination li:hover a{
+                background: #E4282F;
+                color: #fff;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -569,9 +593,12 @@ a:hover                        { text-decoration:none; }
     width: 167px;
     min-width: 32px;
     padding: 15px 25px;
-    margin: 10px 3% 30px 0;
+    margin: 0 3% 30px 0;
     border: 1px solid #98BAB5;
     background: #D6E8E1;
+}
+.home .wrap-side-bar {
+    margin-top: 10px;
 }
     .side-bar > li {
         padding-top: 25px;
