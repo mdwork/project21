@@ -269,6 +269,7 @@ a:hover                        { text-decoration:none; }
                 vertical-align: middle;
             }
                 .description-slide .header {
+                    padding-top: 0;
                     font-size: 60px;
                     font-weight: bold;
                     text-align: left;
@@ -742,6 +743,15 @@ a:hover                        { text-decoration:none; }
     .list-review .name {
         font-size: 19px;
     }
+    .description-slide .header {
+        font-size: 52px;
+    }
+    .description-slide .middle {
+        font-size: 30px;
+    }
+    .description-slide .bottom {
+        font-size: 22px;
+    }
 }
 @media screen and (max-width: 750px){
     .list-working li {
@@ -785,6 +795,20 @@ a:hover                        { text-decoration:none; }
         overflow: hidden;
     }
 }
+@media screen and (max-width: 650px){
+    .jcarousel-pagination {
+        bottom: 20px;
+    }
+    .description-slide .header {
+        font-size: 46px;
+    }
+    .description-slide .middle {
+        font-size: 25px;
+    }
+    .description-slide .bottom {
+        font-size: 20px;
+    }
+}
 @media screen and (max-width: 600px){
     .header-page h1,
     .header-page h2,
@@ -813,6 +837,9 @@ a:hover                        { text-decoration:none; }
     .header-page span {
         font: 32px 'pfbeau';
     }
+    .description-slide .middle {
+        margin-bottom: 15px;
+    }
 }
 @media screen and (max-width: 470px){
     .main-logo {
@@ -835,6 +862,19 @@ a:hover                        { text-decoration:none; }
         float: none;
         width: 90%;
         margin: 0 0 25px;
+    }
+    .jcarousel-pagination {
+        bottom: 10px;
+    }
+    .description-slide .header {
+        font-size: 40px;
+    }
+    .description-slide .middle {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    .description-slide .bottom {
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 420px){
@@ -860,6 +900,24 @@ a:hover                        { text-decoration:none; }
     .tbl-reasons th,
     .tbl-reasons td {
         padding: 12px 0 12px 20px;
+    }
+    .description-slide .wrap > div {
+        vertical-align: top;
+    }
+    .description-slide .middle {
+        font-size: 20px;
+    }
+    .description-slide .header {
+        font-size: 36px;
+    }
+    .description-slide .bottom {
+        font-size: 16px;
+    }
+    .jcarousel-control-prev {
+        left: 5px;
+    }
+    .jcarousel-control-next {
+        right: 5px;
     }
 }
 @media screen and (max-width: 350px){
