@@ -310,6 +310,12 @@ a:hover                        { text-decoration:none; }
         margin-bottom: 30px;
         font: 24px 'pfbeau';
     }
+    .sub-header h2 {
+        font: 24px 'pfbeau';
+    }
+        .size-foto {
+            font: 18px 'pfbeau';
+        }
         .header-page h1,
         .header-page h2,
         .header-page span {
