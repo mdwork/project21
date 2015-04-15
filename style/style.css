@@ -242,11 +242,19 @@ a:hover                        { text-decoration:none; }
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+.nav-footer .btn-toggle {
+    border: 1px solid #fff;
+    color: #fff;
+}
 .btn-toggle:after,
 .btn-toggle:before {
     display: block;
     content: '\2014';
     color: #004937;
+}
+.nav-footer .btn-toggle:after,
+.nav-footer .btn-toggle:before {
+    color: #fff;
 }
 
 .slider-home li {
@@ -705,18 +713,31 @@ a:hover                        { text-decoration:none; }
     .tbl-toggle {
         display: none;
     }
-    .nav-main li,
-    .nav-main li:first-child {
+    .tbl-toggle li,
+    .tbl-toggle li:first-child {
         display: block;
         float: none;
         margin-left: 13px;
     }
-    .nav-main li:before {
+    .tbl-toggle li:before {
         content: '';
         display: none;
     }
     .wrap-header, .wrap-footer {
         padding: 0 7px;
+    }
+    .nav-footer {
+        margin: 0 0 25px 0;
+    }
+    .nav-footer li {
+        margin-bottom: 5px;
+    }
+    .nav-footer li a {
+        font-size: 13px;
+    }
+    .nav-footer .btn-menu,
+    .nav-footer .tbl-toggle {
+        text-align: right;
     }
     .contact-header {
         margin-top: 0;
@@ -824,6 +845,17 @@ a:hover                        { text-decoration:none; }
     .tbl-reasons td {
         font-size: 15px;
     }
+    .footer .top {
+        overflow: hidden;
+    }
+    .logo-footer {
+        margin-bottom: 35px;
+    }
+    .footer .contact-box {
+        position: relative;
+        bottom: auto;
+        right: auto;
+    }
 }
 @media screen and (max-width: 550px){
     .list-good li {
@@ -929,5 +961,15 @@ a:hover                        { text-decoration:none; }
     }
     .list-working .wrap {
         margin: 0 auto;
+    }
+    .logo-footer {
+        width: 150px;
+    }
+    .logo-footer img {
+        width: 100%;
+    }
+    .logo-footer span {
+        font-size: 8px;
+        letter-spacing: 0.3px;
     }
 }
