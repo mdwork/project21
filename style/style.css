@@ -373,6 +373,7 @@ a:hover                        { text-decoration:none; }
             margin-top: 15px;
             font-size: 18px;
             text-decoration: none;
+            text-align: right;
         }
         a.see-more:hover {
             color: #e4282f;
@@ -597,12 +598,13 @@ a:hover                        { text-decoration:none; }
                 float: left;
                 width: 23%;
                 margin-left: 2%;
+                margin-bottom: 15px;
             }
-            .list-works-example li:first-child {
+            .list-works-example li:nth-child(4n + 1) {
                 margin-left: 0;
             }
                 .list-works-example .wrap {
-                    padding: 15px 6.5% 5px;
+                    padding: 15px 8% 5px;
                     border: 1px solid #CECECE;
                     font-size: 22px;
                     font-weight: bold;
@@ -944,7 +946,8 @@ a:hover                        { text-decoration:none; }
     .list-good li {
         width: 49%;
     }
-    .list-good li:nth-child(2n + 1) {
+    .list-good li:nth-child(2n + 1),
+    .list-works-example li:nth-child(2n + 1) {
         margin-left: 0;
     }
     .header-page h1,
@@ -954,6 +957,12 @@ a:hover                        { text-decoration:none; }
     }
     .description-slide .middle {
         margin-bottom: 15px;
+    }
+    a.see-more, .desc-list {
+        font-size: 15px;
+    }
+    .list-works-example li {
+        width: 49%;
     }
 }
 @media screen and (max-width: 470px){
@@ -993,6 +1002,12 @@ a:hover                        { text-decoration:none; }
     }
 }
 @media screen and (max-width: 420px){
+    .sub-header h2 {
+        font: 22px 'pfbeau';
+    }
+    .size-foto {
+        font: 16px 'pfbeau';
+    }
     .list-our-advantages li {
         float: none;
         width: auto;
@@ -1034,8 +1049,14 @@ a:hover                        { text-decoration:none; }
     .jcarousel-control-next {
         right: 5px;
     }
+    .wrap-form {
+        padding: 20px 15px;
+    }
 }
 @media screen and (max-width: 350px){
+    .wrap-form {
+        width: 230px;
+    }
     .list-good .wrap {
         font-size: 14px;
     }
