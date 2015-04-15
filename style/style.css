@@ -417,6 +417,9 @@ a:hover                        { text-decoration:none; }
                             padding-left: 4px;
                             vertical-align: top;
                         }
+                        .list-advantages-portfolio .text {
+                            font-size: 22px;
+                        }
 
         .wrap-form {
             float: right;
