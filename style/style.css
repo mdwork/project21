@@ -401,6 +401,7 @@ a:hover                        { text-decoration:none; }
                 font: 32px 'pfbeau';
             }
             .advantages2 .name-block {
+                margin-bottom: 16px;
                 font-size: 28px;
             }
             .list-our-advantages {

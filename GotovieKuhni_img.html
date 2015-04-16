@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PhotoBankImg</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/jcarousel.responsive.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+        <div class="rg-image-wrapper">
+            {{if itemsCount > 1}}
+                <div class="rg-image-nav">
+                    <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                    <a href="#" class="rg-image-nav-next">Next Image</a>
+                </div>
+            {{/if}}
+            <div class="rg-image"></div>
+            <button class="btn">Купить</button>
+        </div>
+    </script>
+</head>
+
+<body>
+    <div class="custom-footer">
+        <div class="wrap-header">
+            <header class="header wrapper">
+                <div class="wrap">
+                    <a class="main-logo" href="index.html">
+                        <img src="images/header/logo_main.png" alt="logo">
+                        <span>Любые изображения на плитке</span>
+                    </a>
+
+                    <div class="right-colum">
+                        <button class="btn btn-header">Заказать звонок</button>
+                        <input class="search" type="search" placeholder="Поиск">
+                    </div>
+                </div>
+
+                <div class="contact-header">
+                    <ul class="top">
+                        <li class="tell"><span>8 495</span> 723 28 99</li>
+                        <li class="time">9.00 - 22.00</li>
+                    </ul>
+
+                    <span class="bottom">Москва, ул. Люблинская 1, строение 1</span>
+                </div>
+            </header>
+        </div>
+
+        <div class="wrapper">
+            <nav class="nav-main">
+                <div class="btn-menu">
+                    <span class="btn-toggle">—</span>
+                </div>
+
+                <ul class="tbl-toggle">
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">ФотоБанк</a></li>
+                    <li><a href="kitchens.html">Готовые кухонные коллекции</a></li>
+                    <li><a href="#">ФотоПлитка</a></li>
+                    <li><a href="#">ФотоМозаика</a></li>
+                    <li><a href="#">ФотоСтекло</a></li>
+                    <li><a href="#">ФотоКамень</a></li>
+                    <li><a href="#">Люминофор</a></li>
+                    <li><a href="#">Плитка XXL</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="wrapper">
+                <header class="header-page">
+                    <h1>Готовые кухонные коллекции</h1>
+                </header>
+
+                <div id="toggle-sidebar" class="wrap-side-bar">
+                    <span id="toggle-btn-side-bar"></span>
+
+                    <ul class="side-bar">
+                        <li><h2>Готовые кухонные коллекции</h2></li>
+
+                        <li>
+                            <h2>Портфолио</h2>
+
+                            <ul class="list-side-bar">
+                                <li>
+                                    <a href="#">Работы на плитке</a>
+
+                                    <ul class="sub-menu-side-bar">
+                                        <li><a href="#">Деколь</a></li>
+                                        <li><a href="#">Сублимация</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Работы на камне</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Работы на стекле</a>
+
+                                    <ul class="sub-menu-side-bar">
+                                        <li><a href="#">Деколь</a></li>
+                                        <li><a href="#">Сублимация</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="no-toggle">
+                            <h2>ФотоБанк</h2>
+
+                            <ul class="list-side-bar">
+                                <li><a href="#">Paris</a></li>
+                                <li><a href="#">Paris sepia</a></li>
+                                <li><a href="#">Hollywood</a></li>
+                                <li><a href="#">Paris 2</a></li>
+                                <li><a href="#">Florence</a></li>
+                                <li><a href="#">Eat Me</a></li>
+                                <li><a href="#">Sunflowers</a></li>
+                                <li><a href="#">Wine bar</a></li>
+                                <li><a href="#">Oliva</a></li>
+                                <li><a href="#">Arch</a></li>
+                                <li><a href="#">Summer</a></li>
+                                <li><a href="#">Vintage</a></li>
+                                <li><a href="#">Lobster</a></li>
+                                <li><a href="#">Gray</a></li>
+                                <li><a href="#">Cooks</a></li>
+                                <li><a href="#">Cheif</a></li>
+                                <li><a href="#">Herbarium</a></li>
+                                <li><a href="#">Stamps</a></li>
+                                <li><a href="#">Vettriano</a></li>
+                                <li><a href="#">Злые птички</a></li>
+                                <li><a href="#">Underground</a></li>
+                                <li><a href="#">Paris 30</a></li>
+                                <li><a href="#">Paris sepia 20</a></li>
+                                <li><a href="#">Водопады</a></li>
+                                <li><a href="#">Тропический рай</a></li>
+                                <li><a href="#">Подводeный мир</a></li>
+                                <li><a href="#">Природа</a></li>
+                                <li><a href="#">Города</a></li>
+                                <li><a href="#">Венеция</a></li>
+                                <li><a href="#">Арки</a></li>
+                                <li><a href="#">Живопись</a></li>
+                                <li><a href="#">Детский мир</a></li>
+                                <li><a href="#">Турецкeие бани</a></li>
+                                <li><a href="#">Гламур</a></li>
+                                <li><a href="#">Эротика</a></li>
+                                <li><a href="#">Античность</a></li>
+                                <li><a href="#">Хамам</a></li>
+                                <li><a href="#">Кино</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <main class="main">
+                    <header class="sub-header">
+                        <h2>Коллекция Paris</h2>
+                        <span class="size-foto">Изображение 5.6 (50х40)</span>
+                    </header>
+
+                    <div id="rg-gallery" class="rg-gallery">
+                        <div class="rg-thumbs">
+                            <!-- Elastislide Carousel Thumbnail Viewer -->
+                            <div class="es-carousel-wrapper">
+                                <div class="es-nav">
+                                    <span class="es-nav-prev">Previous</span>
+                                    <span class="es-nav-next">Next</span>
+                                </div>
+                                <div class="es-carousel">
+                                    <ul>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio1.jpg" data-large="images/inner_slider/Portfolio1.jpg" alt="image01"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio2.jpg" data-large="images/inner_slider/Portfolio2.jpg" alt="image02"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio3.jpg" data-large="images/inner_slider/Portfolio3.jpg" alt="image03"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio4.jpg" data-large="images/inner_slider/Portfolio4.jpg" alt="image04"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio1.jpg" data-large="images/inner_slider/Portfolio1.jpg" alt="image01"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio2.jpg" data-large="images/inner_slider/Portfolio2.jpg" alt="image02"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio3.jpg" data-large="images/inner_slider/Portfolio3.jpg" alt="image03"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio4.jpg" data-large="images/inner_slider/Portfolio4.jpg" alt="image04"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Elastislide Carousel Thumbnail Viewer -->
+                        </div><!-- rg-thumbs -->
+                    </div><!-- rg-gallery -->
+
+                    <h2 class="name-section">Готовые кухонные коллекции</h2>
+                    <div class="wrap-list-good">
+                        <ul class="list-good">
+                            <li>
+                                <div class="wrap">
+                                    <img src="images/content/picture_good.jpg" alt="picture">
+                                    <span class="name">Elliot Ervwitt, 1951</span>
+                                    <span class="size">5.6 (50х40)</span>
+                                    <span class="price">3 750 р.</span>
+                                    <button class="btn">Купить</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="wrap">
+                                    <img src="images/content/picture_good.jpg" alt="picture">
+                                    <span class="name">Elliot Ervwitt, 1951</span>
+                                    <span class="size">5.6 (50х40)</span>
+                                    <span class="price">3 750 р.</span>
+                                    <button class="btn">Купить</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="wrap">
+                                    <img src="images/content/picture_good.jpg" alt="picture">
+                                    <span class="name">Elliot Ervwitt, 1951</span>
+                                    <span class="size">5.6 (50х40)</span>
+                                    <span class="price">3 750 р.</span>
+                                    <button class="btn">Купить</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <span class="desc-list">Здесь представлены готовые работы, котоые имеются в наличии</span>
+                    </div><!--end WRAP-LIST-GOODS-->
+
+                    <h2 class="name-section">Фотобанк. Выбери свое изображение</h2>
+                    <div class="wrap-list-good">
+                        <ul class="list-good">
+                            <li>
+                                <div class="wrap">
+                                    <img src="images/content/picture_good.jpg" alt="picture">
+                                    <span class="name">Elliot Ervwitt, 1951</span>
+                                    <span class="size">5.6 (50х40)</span>
+                                    <button class="btn">Заказать</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="wrap">
+                                    <img src="images/content/picture_good.jpg" alt="picture">
+                                    <span class="name">Elliot Ervwitt, 1951</span>
+                                    <span class="size">5.6 (50х40)</span>
+                                    <button class="btn">Заказать</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="wrap">
+                                    <img src="images/content/picture_good.jpg" alt="picture">
+                                    <span class="name">Elliot Ervwitt, 1951</span>
+                                    <span class="size">5.6 (50х40)</span>
+                                    <button class="btn">Заказать</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a class="see-more" href="#">Смотреть все изображения</a>
+                    </div><!--end WRAP-LIST-GOODS-->
+
+                    <div class="box-advantages overflow border">
+                        <div class="wrap-form">
+                            <span class="name-form">Расчет стоимости</span>
+
+                            <form class="content-form">
+                                <input type="text" class="text bor-box" placeholder="Имя">
+                                <input type="text" class="tell bor-box" placeholder="Телефон">
+
+                                <button class="btn">Заказать</button>
+                            </form>
+                        </div>
+
+                        <div class="wrap-advantages advantages2">
+                            <span class="name-block">Нанесите данное изображение на:</span>
+                            <ul class="list-our-advantages">
+                                <li>
+                                    <div class="wrap-text">
+                                        <span class="number">1</span>
+                                        <span class="text">Плитку</span>
+                                    </div>
+
+                                    <div class="wrap-text">
+                                        <span class="number">2</span>
+                                        <span class="text">Стекло</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="wrap-text">
+                                        <span class="number">3</span>
+                                        <span class="text">Камень</span>
+                                    </div>
+
+                                    <div class="wrap-text">
+                                        <span class="number">4</span>
+                                        <span class="text">Мозаику</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!--end WRAP-OUR-ADVANTAGES-->
+                    </div>
+                </main>
+            </div><!--end WRAPPER-->
+        </div><!--end WRAPPER-->
+    </div>
+
+    <div class="wrap-footer">
+        <footer class="footer wrapper">
+            <div class="top">
+                <a class="logo-footer" href="index.html">
+                    <img src="images/footer/logo_footer.png" alt="logo">
+                    <span>Любые изображения на плитке</span>
+                </a>
+
+                <nav class="nav-footer">
+                    <div class="btn-menu">
+                        <span class="btn-toggle">—</span>
+                    </div>
+
+                    <ul class="tbl-toggle">
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">ФотоБанк</a></li>
+                        <li><a href="#">Готовые коллекции</a></li>
+                        <li><a href="#">ФотоПлитка</a></li>
+                        <li><a href="#">ФотоМозаика</a></li>
+                        <li><a href="#">ФотоСтекло</a></li>
+                        <li><a href="#">ФотоКамень</a></li>
+                        <li><a href="#">Люминофор</a></li>
+                        <li><a href="#">Плитка XXL</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="contact-box">
+                <span class="tell"><span>8 495</span> 723 28 99</span>,
+                Москва, ул. Люблинская 1, строение 1
+            </div>
+        </footer>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jcarousel.responsive.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/jquery.elastislide.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/commonJs.js"></script>
+</body>
+</html>
