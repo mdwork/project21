@@ -363,9 +363,14 @@ a:hover                        { text-decoration:none; }
                             font-size: 30px;
                             color: #e4282f;
                         }
-                        .list-good .btn {
+                        .list-good .btn,
+                        .rg-image-wrapper .btn {
                             width: 100%;
                             padding: 9px 0;
+                        }
+                        .rg-image-wrapper .btn {
+                            max-width: 202px;
+                            margin: 20px 0 15px;
                         }
         a.see-more,
         .desc-list {
@@ -395,6 +400,9 @@ a:hover                        { text-decoration:none; }
                 margin-bottom: 30px;
                 font: 32px 'pfbeau';
             }
+            .advantages2 .name-block {
+                font-size: 28px;
+            }
             .list-our-advantages {
                 overflow: hidden;
             }
@@ -423,6 +431,10 @@ a:hover                        { text-decoration:none; }
                             display: table-cell;
                             padding-left: 4px;
                             vertical-align: top;
+                        }
+                        .advantages2 .list-our-advantages .text {
+                            vertical-align: middle;
+                            font-size: 21px;
                         }
                         .list-advantages-portfolio .text {
                             font-size: 22px;
