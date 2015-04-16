@@ -780,6 +780,103 @@ a:hover                        { text-decoration:none; }
                 color: #62e1a4;
             }
 /*----------------------------------------------------------------------------------*/
+/*--------------------------------SLIDER INNER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.rg-image-wrapper{
+    position:relative;
+    min-height:20px;
+    padding: 0 35px;
+    text-align: center;
+}
+.rg-image{
+    display: inline-block;
+    position:relative;
+    text-align:center;
+    width: 100%;
+}
+.rg-image img{
+    width:100%;
+    border: 1px solid #a1a1a1;
+    max-width: 660px;
+    max-height: 530px;
+}
+.rg-image-nav a{
+    z-index: 100;
+    position:absolute;
+    top:50%;
+    left:0;
+    width:14px;
+    height:34px;
+    margin-top: -17px;
+    text-indent:-9000px;
+    cursor:pointer;
+    outline:none;
+    background: url("../images/inner_slider/triagle_inner_slider_left.png") no-repeat;
+}
+.rg-image-nav a.rg-image-nav-next{
+    right:0;
+    left:auto;
+    background: url("../images/inner_slider/triagle_inner_slider_right.png") no-repeat;
+}
+.rg-image-nav a:hover{
+    opacity:0.8;
+}
+
+.es-carousel-wrapper{
+    padding:10px 33px 10px 35px;
+    position:relative;
+    margin-bottom:20px;
+}
+.es-carousel{
+    overflow:hidden;
+}
+.es-carousel ul{
+    display:none;
+}
+.es-carousel ul li{
+    height:100%;
+    float:left;
+    display:block;
+}
+.es-carousel ul li a{
+    display:block;
+    padding: 15px 9%;
+    border: 1px solid #a1a1a1;
+    -webkit-touch-callout:none;
+    /* option */
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.es-carousel ul li.selected a{
+    border-color:#e4282f;
+}
+.es-carousel ul li a img{
+    display:block;
+    width: 100%;
+    max-width: 125px;
+    max-height: 105px;
+    border: 1px solid #a1a1a1;
+}
+.es-nav span{
+    position:absolute;
+    top:50%;
+    left:8px;
+    background: url("../images/inner_slider/triagle_inner_slider_left.png") no-repeat;
+    width:14px;
+    height:34px;
+    margin-top:-17px;
+    text-indent:-9000px;
+    cursor:pointer;
+}
+.es-nav span.es-nav-next{
+    right:8px;
+    left:auto;
+    background: url("../images/inner_slider/triagle_inner_slider_right.png") no-repeat;
+}
+/*----------------------------------------------------------------------------------*/
 /*--------------------------------RESPONSIVE----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 @media screen and (max-width: 980px){

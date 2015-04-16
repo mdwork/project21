@@ -7,6 +7,18 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link rel="stylesheet" type="text/css" href="style/jcarousel.responsive.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+        <div class="rg-image-wrapper">
+            {{if itemsCount > 1}}
+                <div class="rg-image-nav">
+                    <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                    <a href="#" class="rg-image-nav-next">Next Image</a>
+                </div>
+            {{/if}}
+            <div class="rg-image"></div>
+        </div>
+    </script>
 </head>
 
 <body>
@@ -43,7 +55,7 @@
                 </div>
 
                 <ul class="tbl-toggle">
-                    <li class="active"><a href="#">Портфолио</a></li>
+                    <li><a href="#">Портфолио</a></li>
                     <li><a href="#">ФотоБанк</a></li>
                     <li><a href="kitchens.html">Готовые кухонные коллекции</a></li>
                     <li><a href="#">ФотоПлитка</a></li>
@@ -149,6 +161,31 @@
                         <h2>Коллекция Paris</h2>
                         <span class="size-foto">Изображение 5.6 (50х40)</span>
                     </header>
+
+                    <div id="rg-gallery" class="rg-gallery">
+                        <div class="rg-thumbs">
+                            <!-- Elastislide Carousel Thumbnail Viewer -->
+                            <div class="es-carousel-wrapper">
+                                <div class="es-nav">
+                                    <span class="es-nav-prev">Previous</span>
+                                    <span class="es-nav-next">Next</span>
+                                </div>
+                                <div class="es-carousel">
+                                    <ul>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio1.jpg" data-large="images/inner_slider/Portfolio1.jpg" alt="image01"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio2.jpg" data-large="images/inner_slider/Portfolio2.jpg" alt="image02"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio3.jpg" data-large="images/inner_slider/Portfolio3.jpg" alt="image03"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio4.jpg" data-large="images/inner_slider/Portfolio4.jpg" alt="image04"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio1.jpg" data-large="images/inner_slider/Portfolio1.jpg" alt="image01"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio2.jpg" data-large="images/inner_slider/Portfolio2.jpg" alt="image02"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio3.jpg" data-large="images/inner_slider/Portfolio3.jpg" alt="image03"></a></li>
+                                        <li><a href="#"><img src="images/inner_slider/Portfolio4.jpg" data-large="images/inner_slider/Portfolio4.jpg" alt="image04"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Elastislide Carousel Thumbnail Viewer -->
+                        </div><!-- rg-thumbs -->
+                    </div><!-- rg-gallery -->
 
                     <section class="examples-works">
                         <header class="sub-header">
@@ -273,6 +310,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/jquery.jcarousel.min.js"></script>
     <script src="js/jcarousel.responsive.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/jquery.elastislide.js"></script>
+    <script src="js/gallery.js"></script>
     <script src="js/commonJs.js"></script>
 </body>
 </html>
