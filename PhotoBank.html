@@ -7,6 +7,18 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link rel="stylesheet" type="text/css" href="style/jcarousel.responsive.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+        <div class="rg-image-wrapper">
+            {{if itemsCount > 1}}
+                <div class="rg-image-nav">
+                    <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                    <a href="#" class="rg-image-nav-next">Next Image</a>
+                </div>
+            {{/if}}
+            <div class="rg-image"></div>
+        </div>
+    </script>
 </head>
 
 <body>
@@ -337,6 +349,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/jquery.jcarousel.min.js"></script>
     <script src="js/jcarousel.responsive.js"></script>
+    <script src="js/jquery.tmpl.min.js"></script>
+    <script src="js/jquery.elastislide.js"></script>
+    <script src="js/gallery.js"></script>
     <script src="js/commonJs.js"></script>
 </body>
 </html>
