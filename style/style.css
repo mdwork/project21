@@ -215,7 +215,7 @@ a:hover                        { text-decoration:none; }
             .nav-main a:hover,
             .nav-main .active a {
                 color: #fff;
-                background: url("../images/btn_bg.png");
+                background: url("../images/btn_bg.png") repeat-x;
 
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
@@ -328,10 +328,11 @@ a:hover                        { text-decoration:none; }
         }
             .list-good {
                 overflow: hidden;
+                text-align: center;
             }
                 .list-good li {
-                    float: left;
-                    width: 32%;
+                    display: inline-table;
+                    width: 31.5%;
                     margin: 0 0 15px 2%;
                     text-align: center;
                 }
@@ -943,7 +944,7 @@ a:hover                        { text-decoration:none; }
 @media screen and (max-width: 950px) {
     .box-advantages .wrap-form {
         float: none;
-        margin-left: 0;
+        margin: 0 auto 35px;
     }
 }
 @media screen and (max-width: 870px) {
@@ -1054,7 +1055,7 @@ a:hover                        { text-decoration:none; }
 }
 @media screen and (max-width: 550px){
     .list-good li {
-        width: 49%;
+        width: 48%;
     }
     .list-good li:nth-child(2n + 1),
     .list-works-example li:nth-child(2n + 1) {
@@ -1109,6 +1110,9 @@ a:hover                        { text-decoration:none; }
     }
     .description-slide .bottom {
         font-size: 18px;
+    }
+    .list-good .price {
+        font-size: 24px;
     }
 }
 @media screen and (max-width: 420px){
