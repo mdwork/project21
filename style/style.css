@@ -641,17 +641,17 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 #toggle-btn-side-bar {
     display: none;
-    z-index: 5;
     position: absolute;
-    top: 0;
     right: 0;
-    bottom: 0;
+    z-index: 5;
+    padding-top: 20px;
     width: 30px;
-    background: url("../images/content/triagle_right.png") repeat-y #D6E8E1;
+    height: 44px;
+    background: url("../images/content/slide_triagle_right.png") bottom no-repeat #D6E8E1;
     cursor: pointer;
 }
 .active #toggle-btn-side-bar {
-    background: url("../images/content/triagle_left.png") repeat-y;
+    background: url("../images/content/slide_triagle_left.png") bottom no-repeat;
 }
 .wrap-side-bar {
     position: relative;

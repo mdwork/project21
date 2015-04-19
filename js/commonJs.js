@@ -39,4 +39,27 @@ $(document).ready(function(){
     $(".btn-toggle").on('click', function(){
         $(this).parent().parent().find('.tbl-toggle').slideToggle();
     });
+
+    /*menu position*/
+    $(document).scroll(function(){
+        var menuWrap = $('.wrap-menu-js'), //блок перемещения меню
+            menuWrapHeight = menuWrap.height(), //высота блока перемещения меню
+            menu = $('.wrap-menu-js .scroll-menu'), ////фиксированное меню
+            menuHeight = menu.height(), //высота фиксированного меню
+            posMenu = menuWrap.offset().top, //позиция блока враппера в документе
+            curPosDocument = $(document).scrollTop(); //текущая позиция экрана
+
+        if(curPosDocument < posMenu + 40) {
+            menu.css({'top': 40 + 'px', 'bottom':'auto'});
+        }
+        else if(curPosDocument > posMenu) {
+            if (curPosDocument >  menuWrapHeight + posMenu - menuHeight - 85) {
+                menu.css({'top':'auto', 'bottom': 45 + 'px'});
+            }
+
+            else {
+                menu.css({'top': curPosDocument - posMenu, 'bottom':'auto'});
+            }
+        }
+    });
 });
